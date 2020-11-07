@@ -11,7 +11,7 @@ class WeatherAPIViews(APIView):
     def get(self, request, formate=None):
         data = []
         if is_dateprime()==True:
-            url = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=07043f581b4457354af6878b172972f8'
+            url = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid='
             data = requests.get(url)
             data = data.json()
              
