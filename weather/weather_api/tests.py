@@ -7,4 +7,4 @@ class wetherTestCase(APITestCase):
         res = requests.get('http://127.0.0.1:8000/api/')
         res = res.json()
         print(res)
-        self.assertEquals(res.status_code, status.HTTP_200_OK)
+        self.assertEquals(res , 'sucess')
